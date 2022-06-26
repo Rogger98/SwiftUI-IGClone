@@ -9,13 +9,19 @@ import SwiftUI
 
 struct FeedsHeaderView: View {
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Image("ig_logo")
                 .resizable()
                 .frame(width: 120, height: 40)
             Spacer()
-            Image(systemName: "plus.square")
-            Image(systemName: "paperplane")
+            HStack (spacing: 20){
+                Image(systemName: "plus.square")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                Image(systemName: "paperplane")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+            }
         }
         .padding(EdgeInsets(top: 10, leading: 10, bottom: 0, trailing: 10))
     }

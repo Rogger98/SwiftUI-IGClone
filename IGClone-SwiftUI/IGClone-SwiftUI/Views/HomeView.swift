@@ -10,11 +10,9 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView {
-            
             FeedsView().tabItem({
-                Image(systemName: "house.fill")
+                Image(systemName: "house")
             })
-            
             ContentView().tabItem({
                 Image(systemName: "magnifyingglass")
             })

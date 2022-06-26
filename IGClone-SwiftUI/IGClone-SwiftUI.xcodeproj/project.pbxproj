@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E90C0D52868AC9C00EA4885 /* MyStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90C0D42868AC9B00EA4885 /* MyStoryView.swift */; };
 		6ECFCA4C28685B9F006BF312 /* IGClone_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFCA4B28685B9F006BF312 /* IGClone_SwiftUIApp.swift */; };
 		6ECFCA4E28685B9F006BF312 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFCA4D28685B9F006BF312 /* ContentView.swift */; };
 		6ECFCA5028685BA1006BF312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECFCA4F28685BA1006BF312 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E90C0D42868AC9B00EA4885 /* MyStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryView.swift; sourceTree = "<group>"; };
 		6ECFCA4828685B9F006BF312 /* IGClone-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGClone-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECFCA4B28685B9F006BF312 /* IGClone_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGClone_SwiftUIApp.swift; sourceTree = "<group>"; };
 		6ECFCA4D28685B9F006BF312 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				6ECFCA68286865B5006BF312 /* FeedsHeaderView.swift */,
 				6ECFCA6A28686935006BF312 /* PostViewHeader.swift */,
 				6ECFCA6C28686B03006BF312 /* PostView.swift */,
+				6E90C0D42868AC9B00EA4885 /* MyStoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E90C0D52868AC9C00EA4885 /* MyStoryView.swift in Sources */,
 				6ECFCA6728686116006BF312 /* StoryView.swift in Sources */,
 				6ECFCA5F28685C58006BF312 /* HomeView.swift in Sources */,
 				6ECFCA6B28686935006BF312 /* PostViewHeader.swift in Sources */,

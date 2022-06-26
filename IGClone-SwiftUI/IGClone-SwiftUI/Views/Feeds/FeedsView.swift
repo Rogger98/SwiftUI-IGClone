@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct FeedsView: View {
-    var array = [0...10]
+    
     var body: some View {
         VStack {
             FeedsHeaderView()
-            ScrollView(.horizontal,showsIndicators: true) {
-                ScrollView(.vertical, showsIndicators: false) {
+            ScrollView(.vertical,showsIndicators: true) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
+                        MyStoryView()
                         StoryView()
                         StoryView()
                         StoryView()
@@ -24,14 +25,19 @@ struct FeedsView: View {
                         StoryView()
                     }
                 }
-                .frame(height: 100)
+                .frame(height: 90)
                 .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
+                Divider()
+                PostView()
+                PostView()
+                PostView()
+                PostView()
+                PostView()
+                PostView()
             }
-            Divider()
-            PostView()
+            
             
         }
-        Spacer()
     }
 }
 
