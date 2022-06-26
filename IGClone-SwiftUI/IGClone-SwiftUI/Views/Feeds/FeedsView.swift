@@ -12,24 +12,32 @@ struct FeedsView: View {
     var body: some View {
         VStack {
             FeedsHeaderView()
-            ScrollView(.vertical, showsIndicators: false) {
-                HStack {
-                    StoryView()
-                    StoryView()
-                    StoryView()
-                    StoryView()
-                    StoryView()
-                    StoryView()
-                    StoryView()
+            ScrollView(.horizontal,showsIndicators: true) {
+                ScrollView(.vertical, showsIndicators: false) {
+                    HStack {
+                        StoryView()
+                        StoryView()
+                        StoryView()
+                        StoryView()
+                        StoryView()
+                        StoryView()
+                        StoryView()
+                    }
                 }
+                .frame(height: 100)
+                .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5))
             }
-            Divider()            
+            Divider()
+            PostView()
+            
         }
+        Spacer()
     }
 }
 
 struct FeedsView_Previews: PreviewProvider {
     static var previews: some View {
         FeedsView()
+        FeedsView().preferredColorScheme(.dark)
     }
 }

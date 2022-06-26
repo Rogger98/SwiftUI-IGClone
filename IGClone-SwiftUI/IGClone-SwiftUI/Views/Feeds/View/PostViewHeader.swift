@@ -1,5 +1,5 @@
 //
-//  StoryView.swift
+//  PostViewHeader.swift
 //  IGClone-SwiftUI
 //
 //  Created by psagc on 26/06/22.
@@ -7,33 +7,34 @@
 
 import SwiftUI
 
-struct StoryView: View {
+struct PostViewHeader: View {
     var body: some View {
-        VStack {
-            ZStack {
+        HStack{
+            ZStack{
                 Circle()
                     .fill(LinearGradient(gradient: Constants.facebookGradient, startPoint: .bottomLeading, endPoint: .topTrailing))
                     .clipShape(Circle())
-                    .frame(width: 65, height: 65)
-                Circle().fill(AppColor.systemBackground).clipShape(Circle())
-                    .frame(width: 60, height: 60)
+                    .frame(width: 25, height: 25)
+                Circle().fill(AppColor.systemBackground)
+                    .frame(width: 22.5, height: 22.5)
                 Image("profile05")
                     .resizable()
                     .clipShape(Circle())
-                    .frame(width: 55, height: 55)
+                    .frame(width: 20, height: 20)
             }
-            Text("Sagar")
-                .lineLimit(1)
-                .frame(width: 65)
+            Text("i_am_sagar_98")
+            Spacer()
+            Image(systemName: "ellipsis")
         }
+        .padding(EdgeInsets(top: 10, leading: 10, bottom: 5, trailing: 10))
     }
 }
 
-struct StoryView_Previews: PreviewProvider {
+struct PostViewHeader_Previews: PreviewProvider {
     static var previews: some View {
-        StoryView()
+        PostViewHeader()
             .previewLayout(.sizeThatFits)
-        StoryView()
+        PostViewHeader()
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.dark)
     }

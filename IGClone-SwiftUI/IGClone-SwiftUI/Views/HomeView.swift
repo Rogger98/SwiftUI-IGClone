@@ -10,15 +10,14 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView {
+            
             FeedsView().tabItem({
                 Image(systemName: "house.fill")
             })
+            
             ContentView().tabItem({
-                Image(systemName: "magnifyingglass").accentColor(.black)
+                Image(systemName: "magnifyingglass")
             })
-//            ContentView().tabItem({
-//                Image(systemName: "reel")
-//            })
             ContentView().tabItem({
                 Image(systemName: "heart")
             })
