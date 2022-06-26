@@ -22,7 +22,7 @@ struct PostView: View {
                 Image(systemName: "bookmark")
             } .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
             VStack(alignment: .leading,spacing: 5) {
-                Text("5 Links").bold()
+                Text("5 likes").bold()
                 (Text("i_am_sagar98").bold() + Text(" You will face many defeats in life, but never let yourself be defeated."))
                     .lineLimit(2)
             }.padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 8))
